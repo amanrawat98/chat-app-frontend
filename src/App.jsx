@@ -1,6 +1,6 @@
 import React from 'react'
 import { io } from "socket.io-client";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Chat from './pages/Chat';
