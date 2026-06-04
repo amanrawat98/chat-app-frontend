@@ -12,6 +12,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
+        <Route
+          path="/"
+          element={<Navigate to="/signup" replace />}
+        />
         <Route path='/signup' element={<PublicRoute><Signup /></PublicRoute>} />
         <Route path='/login' element={<PublicRoute><Login /></PublicRoute>} />
         <Route path='/chat' element={<ProtectedRoute><Chat /></ProtectedRoute>} />
